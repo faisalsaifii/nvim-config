@@ -5,7 +5,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-
+vim.g.blamer_enabled = true
 vim.g.have_nerd_font = true
 
 vim.opt.autowrite = true
@@ -837,6 +837,7 @@ require('lazy').setup({
   require 'plugins.autotag',
   require 'plugins.autopairs',
   require 'plugins.nvim-tree',
+  require 'plugins.blamer',
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
