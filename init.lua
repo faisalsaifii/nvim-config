@@ -12,8 +12,8 @@ vim.g.have_nerd_font = true
 
 vim.opt.autowrite = true
 
-vim.opt.number = true
--- vim.opt.relativenumber = true
+-- vim.opt.number = true
+vim.opt.relativenumber = true
 
 vim.opt.mouse = 'a'
 
@@ -127,6 +127,7 @@ require('lazy').setup({
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = true } },
 
   require 'plugins.diffview',
+  require 'plugins.tmux-navigator',
   require 'plugins.formatter',
   require 'plugins.autocomplete',
   require 'plugins.autotag',
